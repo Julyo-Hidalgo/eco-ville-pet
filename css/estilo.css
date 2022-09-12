@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+/*importando fonte do fonts.google.com Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+padding:0; margin:0; vertical-align:baseline; list-style:none; border:0; font-size: 105%; text-decoration:none; font-family: Roboto;
+}
+
+a{
+    color: white;
+}
+
+/*Cabeçalho do site --menu*/
+#cabecalho{
+    background-color: #89A730;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+    
+}
+
+#logo{
+    position: relative;
+    display: inline-block;
+    margin-left: 5%;
+}
+
+#logo img{
+    padding: 3%;
+    border-radius:50%;
+    width: 80%;
+    height: 80%;
+}
+
+#menu{
+    display: inline-block;
+	position: relative;
+    text-align: right;
+    width: 70%;
+}
+
+#menu li{
+    display: inline-block;
+    padding: 5px;
+}
+
+#menu li a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+#menu li a:visited{
+    color: white;
+}
+
+/*interface do sistema --do carrossel até os produtos*/
+#interface{
+    padding-top: 1%;
+    border-radius: 10px 10px 0 0;
+    margin:0 auto;
+    width: 80%;
+    background-color: #E4E4D9;
+}
+
+#interface h1{
+    background-color: #89A730;
+    width: 45%;
+    padding: 1%;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+
+/*Carrossel*/
+#carrossel{
+    width: 100%;
+    margin: 0 auto 75px auto;
+    padding: 5%;
+}
+
+/*Interface -> Produtos*/
+#produtos{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.produto{
+    margin: 5% auto 5% auto;
+    display: inline-block;
+    background-color: white;
+    border-radius: 30px;
+    width: 35%;
+}
+
+#produto1{
+    margin-right: 5%;
+}
+
+.produto img{
+    width: 80%;
+    padding-top: 5%;
+}
+
+/*estilo do formulario e mapa*/
+#form_map{
+    background-color: #E4E4D9;
+    margin: 1% auto 0 auto;
+    width: 80%;
+}
+
+/*estilo do form*/
+#form{
+    background-color: #89A730;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+#form legend{
+    padding: 2%;
+    color: white;
+}
+
+#form input{
+    display: inline;
+    background-color: white;
+    text-align: center;
+    color: #89A730;
+    padding: 1%;
+    width: 35%;
+    border-radius: 10px;
+}
+
+#form ::placeholder{
+    color: #89A730;
+    font-size: 100%;
+}
+
+#form button{
+    background-color: #262320;
+    color: white;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+/*estilo do mapa*/
+
+#map{
+    background-color: #89A730;
+    margin: 1% auto 0 auto;
+    width: 96%;
+    height: 150%;
+    padding: 2%;
+}
+
+/*estilo do rodapé*/
+#rodape{
+    background-color: #E4E4D9;
+    color: black;
+    display: block;
+    position: relative;
+    margin: 1% auto 0 auto;
+    width: 80%;
+    text-align: center;
+    padding: 15px;
+}
+
+#rodape a{
+    color: #262320;
+}
+
+#rodape a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.rodape{
+    position: relative;
+    display: inline-grid;
+    width: 30%;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.rodape h1{
+    color: #262320;
+    font-size: 25px;
+}
+
+.logo{
+    display: inline-block;
+}
+
+.logo img{
+    width: 20%;
+}
+
+#atendimento img{
+    width: 100%;
+    height: 100%;
+}

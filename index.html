@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eco Ville Pet</title>
+        <script>
+            function alerta() {
+              alert("Ops! Ainda não funciona!");
+            }
+            </script>
+
+        <!--bootstrap links-->
+        <!--link js-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!--link css-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!--link css-->
+        <link href="css/estilo.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+
+        <!-- Aqui é o cabecalho onde fica menu-->
+        <header>
+            <div id="cabecalho">
+                <picture id="logo">
+                    <a href="index.html"><img src="img/cabecalho/logo.jpg" alt="logo Eco Ville Pet"></a>
+                </picture>
+                
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="#">Categoria</a></li>
+                        <li><a href="#" >Contato</a></li>
+                        <li><a href="#">Entrar | Cadastrar</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Aqui vai ser onde fica a parte principal do carrossel e dos produtos-->
+        <main>
+            <div id="interface">
+                <!--Aqui fica o Carrosel-->
+                <div id="carrossel">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="d-block w-100" src="img/carrossel/cachorro_ola.png" alt="Olá!!!">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="img/carrossel/imagem_teste.png" alt="teste">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="img/carrossel/imagem_teste2.png" alt="teste2">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Aqui ficarão os produtos, cada um em uma div-->
+                <h1>Nossos Produtos</h1>
+                <div id="produtos">
+                    <div id="produto1" class="produto">
+                        <picture>
+                            <img src="img/produto/casinha.png" alt="Casa">
+                            <figcaption>
+                                <p>Casinha</p>
+                                <p>R$ #,##</p>
+                            </figcaption>
+                        </picture>
+                    </div>
+        
+                    <div id="produto2" class="produto">
+                        <picture>
+                            <img alt="Pet Cola" src="img/produto/petcola.png">
+                            <figcaption>
+                                <p>Pet Cola</p>
+                                <p>R$ #,##</p>
+                            </figcaption>
+                        </picture>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <!--Aqui, embora seja um aside, ficará embaixo da div interface-->
+        <!--Aqui ficará o formulário de novidades e o maps-->
+        <aside>
+            <div id="form_map">
+                <div id="form">
+                    <form>
+                        <fieldset>
+                            <legend>Se inscreva para receber novidades no seu email!</legend>
+                            <input type="text" name="cNome" id="txt_nome" size="20" maxlength="30" placeholder="Qual Seu Nome?">
+                            <input type="text" name="cNome" id="txt_nome" size="20" maxlength="30" placeholder="Seu e-mail?">
+                            <button onclick="alerta()">
+                                Cadastrar
+                            </button>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.5918618745477!2d-48.56497348255617!3d-22.29344519999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c757fe1abe1399%3A0x3b0bd1dacc48457e!2sEtec%20Joaquim%20Ferreira%20do%20Amaral!5e0!3m2!1sen!2sbr!4v1662773348912!5m2!1sen!2sbr" width="100%" height="410px" allowfullscreen="false" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </aside>
+
+        <!--Aqui ficará o rodapé-->
+        <footer>
+            <div id="rodape">
+                <div class="rodape" id="institucional">
+                    <h1>Institucional</h1>
+                    <p><a>Quem Somos?</a></p>
+                    <p><a>Nossas Lojas</a></p>
+                    <p><a>Trabalhe Conosco</a></p>
+                </div>
+
+                <div class="rodape" id="rede_social">
+                    <h1>Redes Sociais</h1>
+
+                    <div class="logo">
+                        <picture>
+                            <a href="https://api.whatsapp.com/send?phone=555514988027050&text=Oi!!!%20Tudo%20bem%3F%20Gostaria%20de%20saber%20mais%20sobre%20os%20seus%20produtos." target="_blank"><img src="img/rodape/whatsapp.png" alt="Whatsapp"></a>
+                        </picture>
+                        
+                        <picture>
+                            <a href="https://www.facebook.com/people/Eco-Ville-Pet/100084975432074/" target="_blank"><img src="img/rodape/facebook.png" alt="Facebook"></a>
+                        </picture>
+        
+                        <picture>
+                            <a href="https://www.instagram.com/eco_ville_pet/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img src="img/rodape/instagram.png" alt="instagram"></a>
+                        </picture>
+                    </div>
+                </div>
+
+                <div class="rodape" id="atendimento">
+                    <h1>Centrais de Atendimento</h1>
+                    <picture>
+                        <img src="img/rodape/brasao_cartao.jpg" alt="Brasão de Cartões">
+                    </picture>
+                </div>
+
+                <div class="rodape" id="seguranca">
+                    <h1>Segurança</h1>
+                    <picture>
+                        <img src="img/rodape/selo_seguranca.png" alt="Brasão de Cartões">
+                    </picture>
+                </div>
+            </div>
+        </footer>
+        
+    </body>
+</html>
