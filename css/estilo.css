@@ -75,14 +75,15 @@ a{
 
 #drop_link{
     display: none;
-    width: 200px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
     text-align: center;
-    left: 40%;
+    left: 0%;
     padding-top: 3%;
     top: 1%;
     position: absolute;
-    background-color: #89A730;
+    background-color: black;
+    opacity: 70%;
     border: 3px solid white;
     padding: 0.5%;
     border-radius: 10px 10px;
@@ -94,13 +95,22 @@ a{
     font-size: 20px;
 }
 
+#btn_fechar{
+    left: 42%;
+    padding: 1%;
+    font-size: 30px;
+    position: relative;
+}
+
 /*Estilo para telas de tablet*/
 @media screen and (max-width: 860px){
     #menu{display: none;}/*O menu "normal" some*/
     #drop_menu{display: inline-block;}/*mostro o menu para telas pqns*/
     .toda_div{width: 95%;}/*defino um novo tamanho para as divs*/
     #logo img{width: 85%; height: 85%; padding: 3%;}/*novo tamanho para logo*/
-    .rodape{width: 80%;}/*novo tamanho para divs do rodapé*/
+    #rodape div{width: 45%;}/*novo tamanho para as divs do rodapé*/
+    #rodape h1{font-size: 15px;}
+    #rodape a{font-size: 12px;}
 }
 
 /*interface do sistema --do carrossel até os produtos*/
@@ -201,17 +211,16 @@ a{
 
 /*estilo do rodapé*/
 #rodape{
-    color: black;
-    position: relative;
-    text-align: center;
     padding: 2%;
+    text-align: center;
 }
 
-#rodape a{
+.rodape a{
     color: #262320;
     font-size: 1.5vw;
 }
 
+/*as Ids não são alteradas pelas media query(mas, dá para usar usar o #index(que eu preferi não usar)*/
 #rodape a:hover{
     color: black;
     text-decoration: underline;
@@ -221,6 +230,7 @@ a{
     position: relative;
     display: inline-grid;
     width: 30%;
+    text-align: center;
 }
 
 .rodape h1{
@@ -230,6 +240,7 @@ a{
 
 .logo{
     display: inline-block;
+    margin: 0 auto;
 }
 
 .logo img{
