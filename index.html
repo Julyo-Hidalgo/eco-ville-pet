@@ -5,10 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Eco Ville Pet</title>
         <script>
-            function alerta() {
-              alert("Ops! Ainda não funciona!");
+            function alerta(){
+                alert("Ops! Ainda não funciona!");
             }
-            </script>
+            var vez = false;
+            function ativa_menu(){
+                var valor = "";
+                if (vez == false){
+                    valor = "block";
+                    vez = true;
+                }
+                else{
+                    vez = false;
+                    valor = "none";
+                }
+                    document.getElementById("drop_link").style.display = valor;
+                    document.getElementById("btn_drop_menu").tabindex = "1";
+            }
+        </script>
 
         <!--bootstrap links-->
         <!--link js-->
@@ -26,7 +40,7 @@
 
         <!-- Aqui é o cabecalho onde fica menu-->
         <header>
-            <div id="cabecalho">
+            <div id="cabecalho" class="toda_div">
                 <picture id="logo">
                     <a href="index.html"><img src="img/cabecalho/logo.jpg" alt="logo Eco Ville Pet"></a>
                 </picture>
@@ -39,12 +53,25 @@
                         <li><a href="#">Entrar | Cadastrar</a></li>
                     </ul>
                 </nav>
+
+                <nav id="drop_menu">
+                    <button id="btn_drop_menu" onclick="ativa_menu()"><img src="img/cabecalho/menu.png" tabindex="0"></button>
+                </nav>
+
+                <div id="drop_link">
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="#">Categoria</a></li>
+                        <li><a href="#" >Contato</a></li>
+                        <li><a href="#">Entrar | Cadastrar</a></li>
+                    </ul>
+                </div>
             </div>
         </header>
 
         <!-- Aqui vai ser onde fica a parte principal do carrossel e dos produtos-->
         <main>
-            <div id="interface">
+            <div id="interface" class="toda_div">
                 <!--Aqui fica o Carrosel-->
                 <div id="carrossel">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -105,7 +132,7 @@
         <!--Aqui, embora seja um aside, ficará embaixo da div interface-->
         <!--Aqui ficará o formulário de novidades e o maps-->
         <aside>
-            <div id="form_map">
+            <div id="form_map" class="toda_div">
                 <div id="form">
                     <form>
                         <fieldset>
@@ -127,7 +154,7 @@
 
         <!--Aqui ficará o rodapé-->
         <footer>
-            <div id="rodape">
+            <div id="rodape" class="toda_div">
                 <div class="rodape" id="institucional">
                     <h1>Institucional</h1>
                     <p><a>Quem Somos?</a></p>

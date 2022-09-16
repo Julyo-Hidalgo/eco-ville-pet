@@ -4,20 +4,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 *{
-padding:0; margin:0; vertical-align:baseline; list-style:none; border:0; font-size: 105%; text-decoration:none; font-family: Roboto;
+padding:0; margin:0; vertical-align:baseline; list-style:none; border:0; font-size: 2vw; text-decoration:none; font-family: Roboto;
 }
 
 a{
     color: white;
 }
 
+/*estilo para todas as divs que separam partes princiapis do site: cabeçalho, interface, aside e rodapé*/
+.toda_div{
+    width: 80%;
+    margin: 1% auto 0 auto;
+    border-radius: 20px;
+    background-color: #E4E4D9;
+}
+
 /*Cabeçalho do site --menu*/
 #cabecalho{
-    background-color: #89A730;
-    width: 80%;
-    margin: 0 auto;
-    border-radius: 20px;
-    
+    background-color: #89A730;  
+    margin-top: 0%;
 }
 
 #logo{
@@ -27,7 +32,7 @@ a{
 }
 
 #logo img{
-    padding: 3%;
+    padding: 5%;
     border-radius:50%;
     width: 80%;
     height: 80%;
@@ -54,13 +59,54 @@ a{
     color: white;
 }
 
+#drop_menu{
+    display: none;
+    margin-left: 50%;
+    width: 10%;
+}
+
+#drop_menu button{
+    background-color: #89A730;
+}
+
+#drop_menu img{
+    width: 100%;
+}
+
+#drop_link{
+    display: none;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    left: 40%;
+    padding-top: 3%;
+    top: 1%;
+    position: absolute;
+    background-color: #89A730;
+    border: 3px solid white;
+    padding: 0.5%;
+    border-radius: 10px 10px;
+    
+}
+
+#drop_link a{
+    color: white;
+    font-size: 20px;
+}
+
+/*Estilo para telas de tablet*/
+@media screen and (max-width: 860px){
+    #menu{display: none;}/*O menu "normal" some*/
+    #drop_menu{display: inline-block;}/*mostro o menu para telas pqns*/
+    .toda_div{width: 95%;}/*defino um novo tamanho para as divs*/
+    #logo img{width: 85%; height: 85%; padding: 3%;}/*novo tamanho para logo*/
+    .rodape{width: 80%;}/*novo tamanho para divs do rodapé*/
+}
+
 /*interface do sistema --do carrossel até os produtos*/
 #interface{
     padding-top: 1%;
     border-radius: 10px 10px 0 0;
-    margin:0 auto;
-    width: 80%;
-    background-color: #E4E4D9;
 }
 
 #interface h1{
@@ -70,6 +116,7 @@ a{
     border-radius: 10px;
     text-align: center;
     color: white;
+    font-size: 3vw;
     margin: 0 auto;
 }
 
@@ -77,7 +124,8 @@ a{
 #carrossel{
     width: 100%;
     margin: 0 auto 75px auto;
-    padding: 5%;
+    padding: 2%;
+    padding-top: 5%;
 }
 
 /*Interface -> Produtos*/
@@ -104,11 +152,6 @@ a{
 }
 
 /*estilo do formulario e mapa*/
-#form_map{
-    background-color: #E4E4D9;
-    margin: 1% auto 0 auto;
-    width: 80%;
-}
 
 /*estilo do form*/
 #form{
@@ -151,25 +194,22 @@ a{
 #map{
     background-color: #89A730;
     margin: 1% auto 0 auto;
-    width: 96%;
+    width: 100%;
     height: 150%;
     padding: 2%;
 }
 
 /*estilo do rodapé*/
 #rodape{
-    background-color: #E4E4D9;
     color: black;
-    display: block;
     position: relative;
-    margin: 1% auto 0 auto;
-    width: 80%;
     text-align: center;
-    padding: 15px;
+    padding: 2%;
 }
 
 #rodape a{
     color: #262320;
+    font-size: 1.5vw;
 }
 
 #rodape a:hover{
@@ -177,17 +217,15 @@ a{
     text-decoration: underline;
 }
 
-.rodape{
+.rodape{/*estilo para as divs do radapé*/
     position: relative;
     display: inline-grid;
     width: 30%;
-    font-size: 15px;
-    padding: 5px;
 }
 
 .rodape h1{
     color: #262320;
-    font-size: 25px;
+    font-size: 2vw;
 }
 
 .logo{
