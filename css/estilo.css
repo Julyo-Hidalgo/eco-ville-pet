@@ -74,7 +74,7 @@ a{
 }
 
 #drop_link{
-    display: block;
+    display: none;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -108,15 +108,28 @@ a{
     position: relative;
 }
 
+/*Estilo para telas de celular*/
+@media screen and (max-width: 530px){
+    #drop_menu{margin-left: 25%;}/*mudando a margin do drop menu*/
+    #logo{width: 35%; height: 35%; margin-left: 12%; padding: 1%;}/*novo tamanho para logo*/
+}
+
 /*Estilo para telas de tablet*/
 @media screen and (max-width: 860px){
     #menu{display: none;}/*O menu "normal" some*/
     #drop_menu{display: inline-block;}/*mostro o menu para telas pqns*/
     .toda_div{width: 95%;}/*defino um novo tamanho para as divs*/
     #logo img{width: 85%; height: 85%; padding: 3%;}/*novo tamanho para logo*/
+
+    /*interface*/
+    .produto img{border-radius: 20px; padding: 10px;}/*arredondando e espaçando as imagens dos produtos*/
+    
+    /*rodape*/
     #rodape div{width: 45%;}/*novo tamanho para as divs do rodapé*/
-    #rodape h1{font-size: 15px;}
-    #rodape a{font-size: 12px;}
+    #rodape h1{font-size: 20px; padding-top: 10px;}
+    #rodape a{font-size: 15px;}
+    #rede_img{width: 100%;}/*div imagens das redes sociais com novo tamanho*/
+    #rede_img img{width: 45%; padding: 2%;}
 }
 
 /*interface do sistema --do carrossel até os produtos*/
@@ -206,7 +219,6 @@ a{
 }
 
 /*estilo do mapa*/
-
 #map{
     background-color: #89A730;
     margin: 1% auto 0 auto;
@@ -250,7 +262,7 @@ a{
 }
 
 .logo img{
-    width: 20%;
+    width: 30%;
 }
 
 #atendimento img{
