@@ -4,8 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 *{
-padding:0; margin:0; vertical-align:baseline; list-style:none; border:0; font-size: 2vw; text-decoration:none; font-family: Roboto;
+padding:0; margin:0; vertical-align:baseline; border:0; font-size: 2vw;  font-family: Roboto;
 }
+
 
 a{
     color: white;
@@ -25,6 +26,7 @@ a{
     margin-top: 0%;
 }
 
+
 #logo{
     position: relative;
     display: inline-block;
@@ -43,6 +45,12 @@ a{
 	position: relative;
     text-align: right;
     width: 70%;
+    
+}
+
+#menu ul{
+    list-style:none; 
+    text-decoration:none;
 }
 
 #menu li{
@@ -87,7 +95,6 @@ a{
     border-radius: 10px 10px;
 }
 
-#carrossel{display: none;}
 
 #drop_link li{
     padding: 10px;
@@ -107,6 +114,14 @@ a{
     font-size: 30px;
     position: relative;
 }
+
+/*Quem Somos*/
+#txt_quem_somos{
+    
+}
+
+
+
 
 /*Estilo para telas de celular*/
 @media screen and (max-width: 530px){
@@ -147,6 +162,16 @@ a{
     color: white;
     font-size: 3vw;
     margin: 0 auto;
+}
+
+#interface h2{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 4vh;
+}
+
+#interface p{
+    font-size: 2vh;
 }
 
 /*Carrossel*/
