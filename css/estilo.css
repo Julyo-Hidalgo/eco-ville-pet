@@ -11,6 +11,10 @@ a{
     color: white;
 }
 
+.visitado{/*sublinha o link da página atual*/
+    text-decoration: underline;
+}
+
 /*estilo para todas as divs que separam partes princiapis do site: cabeçalho, interface, aside e rodapé*/
 .toda_div{
     width: 80%;
