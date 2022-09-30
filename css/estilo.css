@@ -115,10 +115,8 @@ a{
     position: relative;
 }
 
-/*Quem Somos*/
-#txt_quem_somos{
-    
-}
+
+
 
 
 
@@ -151,6 +149,7 @@ a{
 #interface{
     padding-top: 1%;
     border-radius: 10px 10px 0 0;
+    
 }
 
 #interface h1{
@@ -165,13 +164,18 @@ a{
 }
 
 #interface h2{
-    font-weight: bold;
-    font-style: italic;
-    font-size: 4vh;
+    color: #0a6eb9;
+    font-family: "Fira Sans",Sans-serif;
+    
+    
 }
 
 #interface p{
-    font-size: 2vh;
+    font-family: "Fira Sans",Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.9em;
+    letter-spacing: .1px;
 }
 
 /*Carrossel*/
@@ -288,6 +292,10 @@ a{
 
 .logo img{
     width: 30%;
+}
+
+.logo_eco_ville_pet{
+    border-radius:50%;
 }
 
 #atendimento img{
