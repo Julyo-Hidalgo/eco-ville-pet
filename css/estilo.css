@@ -4,8 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 *{
-padding:0; margin:0; vertical-align:baseline; list-style:none; border:0; font-size: 2vw; text-decoration:none; font-family: Roboto;
+padding:0; margin:0; vertical-align:baseline; border:0; font-size: 2vw;  font-family: Roboto;
 }
+
 
 a{
     color: white;
@@ -29,6 +30,7 @@ a{
     margin-top: 0%;
 }
 
+
 #logo{
     position: relative;
     display: inline-block;
@@ -47,6 +49,12 @@ a{
 	position: relative;
     text-align: right;
     width: 70%;
+    
+}
+
+#menu ul{
+    list-style:none; 
+    text-decoration:none;
 }
 
 #menu li{
@@ -91,7 +99,6 @@ a{
     border-radius: 10px 10px;
 }
 
-#carrossel{display: none;}
 
 #drop_link li{
     padding: 10px;
@@ -111,6 +118,12 @@ a{
     font-size: 30px;
     position: relative;
 }
+
+
+
+
+
+
 
 /*Estilo para telas de celular*/
 @media screen and (max-width: 530px){
@@ -148,6 +161,7 @@ a{
 #interface{
     padding-top: 1%;
     border-radius: 10px 10px 0 0;
+    
 }
 
 #interface h1{
@@ -159,6 +173,21 @@ a{
     color: white;
     font-size: 3vw;
     margin: 0 auto;
+}
+
+#interface h2{
+    color: #0a6eb9;
+    font-family: "Fira Sans",Sans-serif;
+    
+    
+}
+
+#interface p{
+    font-family: "Fira Sans",Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.9em;
+    letter-spacing: .1px;
 }
 
 /*Carrossel*/
@@ -275,6 +304,10 @@ a{
 
 .logo img{
     width: 30%;
+}
+
+.logo_eco_ville_pet{
+    border-radius:50%;
 }
 
 #atendimento img{
