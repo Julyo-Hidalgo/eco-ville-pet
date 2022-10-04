@@ -1,8 +1,0 @@
-#E4E4D9
-cor de fundo da div(cinza)
-
-#89A730
-cor dos detalhes(verde)
-
-#262320
-preto para titulo

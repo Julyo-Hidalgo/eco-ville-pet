@@ -12,6 +12,10 @@ a{
     color: white;
 }
 
+.visitado{/*sublinha o link da página atual*/
+    text-decoration: underline;
+}
+
 /*estilo para todas as divs que separam partes princiapis do site: cabeçalho, interface, aside e rodapé*/
 .toda_div{
     width: 80%;
@@ -125,6 +129,14 @@ a{
 @media screen and (max-width: 530px){
     #drop_menu{margin-left: 25%;}/*mudando a margin do drop menu*/
     #logo{width: 35%; height: 35%; margin-left: 12%; padding: 1%;}/*novo tamanho para logo*/
+
+    /*interface*/
+    #produtos div{width: 70%;}
+          
+    /*rodape*/
+    #rodape div{display: block; width: 65%; margin: 0 auto;}/*novo tamanho para as divs do rodapé*/
+    #rodape h1{font-size: 5vw;}
+    #rodape a{font-size: 3vw;}
 }
 
 /*Estilo para telas de tablet*/
@@ -138,9 +150,9 @@ a{
     .produto img{border-radius: 20px; padding: 10px;}/*arredondando e espaçando as imagens dos produtos*/
     
     /*rodape*/
-    #rodape div{width: 45%;}/*novo tamanho para as divs do rodapé*/
-    #rodape h1{font-size: 20px; padding-top: 10px;}
-    #rodape a{font-size: 15px;}
+    .rodape{width: 50%;}/*novo tamanho para as divs do rodapé*/
+    .rodape h1{font-size: 20px; padding-top: 10px;}
+    .rodape a{font-size: 15px;}
     #rede_img{width: 100%;}/*div imagens das redes sociais com novo tamanho*/
     #rede_img img{width: 45%; padding: 2%;}
 }
@@ -197,7 +209,7 @@ a{
     display: inline-block;
     background-color: white;
     border-radius: 30px;
-    width: 35%;
+    width: 45%;
 }
 
 #produto1{
