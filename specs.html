@@ -13,6 +13,8 @@
 
         <!--link css-->
         <link href="css/estilo.css" rel="stylesheet" type="text/css">
+        <link href="css/specs.css" rel="stylesheet" type="text/css">
+        
     </head>
 
     <body>
@@ -53,9 +55,21 @@
         <main>
             <div id="interface" class="toda_div">
                 <h1>Toque nas Áreas vermelhas para ter mais informações:</h1>
-                <picture>
-                    <img src="img/specs/projeto_casa.svg"><!-- Aqui vou fazer um mapa de imagem sobre a casa-->
-                </picture>
+                <div id="casa">
+                    <img src="img/specs/projeto_casa.png" usemap="#mapa">
+                    <!--definindo um mapa de imagem-->
+                    <map name="mapa" id="mapa_imagem">
+                        <area alt="teste" title="telhado" href="projeto_casa.html#telhado" target="janela" coords="128,20 289,21 206,78 206,78 47,78" shape="poly">
+                        
+                        <area alt="teste" title="interior" href="projeto_casa.html#interior" target="janela" coords="130,122 130,153 163,150 164,144 157,133 146,125" shape="poly">
+
+                        <area alt="teste" title="escada" href="projeto_casa.html#escada" target="janela" coords="243,133 234,138 298,138 300,133" shape="poly">
+                    </map>
+                </div>
+                
+                <div id="iframe">
+                    <iframe src="projeto_casa.html#aponta" name="janela" scrolling=no height="232px" width="390px"></iframe>
+                </div>
             </div>
         </main>
 
@@ -80,7 +94,7 @@
                         <picture>
                             <a href="https://www.facebook.com/people/Eco-Ville-Pet/100084975432074/" target="_blank"><img src="img/rodape/facebook.png" alt="Facebook"></a>
                         </picture>
-        
+
                         <picture>
                             <a href="https://www.instagram.com/eco_ville_pet/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img src="img/rodape/instagram.png" alt="instagram"></a>
                         </picture>

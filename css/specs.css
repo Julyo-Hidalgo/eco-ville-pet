@@ -1,0 +1,19 @@
+#interface{
+    width: 80%;
+    text-align: center;
+}
+
+#interface div{
+    text-align: center;
+    margin: 10px auto;
+    display: inline-grid;
+}
+
+iframe{
+    border: none;
+    overflow: hidden;
+}
+
+#interface h1{
+    width: 70%;
+}
