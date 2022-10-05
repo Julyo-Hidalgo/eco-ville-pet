@@ -128,6 +128,10 @@ a{
 
 /*Estilo para telas de tablet*/
 @media screen and (max-width: 860px){
+    .toda_div{
+        margin-bottom: 5%;/*aumentado o espaço entre as divs para tela de celular*/
+}
+          
     #menu{display: none;}/*O menu "normal" some*/
     #drop_menu{display: inline-block;}/*mostro o menu para telas pqns*/
     .toda_div{width: 95%;}/*defino um novo tamanho para as divs*/

@@ -5,8 +5,13 @@
 
 #interface div{
     text-align: center;
-    margin: 10px auto;
+    margin: 30px auto;
     display: inline-grid;
+}
+
+#iframe{
+    width: 50%;
+    height: 300px;
 }
 
 iframe{
