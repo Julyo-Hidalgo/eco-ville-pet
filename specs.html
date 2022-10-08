@@ -13,8 +13,8 @@
 
         <!--link css-->
         <link href="css/estilo.css" rel="stylesheet" type="text/css">
+        <!--link do specs-->
         <link href="css/specs.css" rel="stylesheet" type="text/css">
-        
     </head>
 
     <body>
@@ -29,8 +29,8 @@
                 <nav id="menu">
                     <ul>
                         <li><a href="index.html">Início</a></li>
-                        <li><a href="specs.html" class="visitado">Especificação</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="specs.html"  class="visitado">Especificação</a></li>
+                        <li><a href="#" >Contato</a></li>
                         <li><a href="#">Entrar | Cadastrar</a></li>
                     </ul>
                 </nav>
@@ -43,7 +43,7 @@
                     <button id="btn_fechar" onclick="fecha_menu()">X</button>
                     <ul>
                         <li><a href="index.html">Início</a></li>
-                        <li><a href="categoria.html">Categoria</a></li>
+                        <li><a href="specs.html">Especificação</a></li>
                         <li><a href="#" >Contato</a></li>
                         <li><a href="#">Entrar | Cadastrar</a></li>
                     </ul>
@@ -55,7 +55,7 @@
         <main>
             <div id="interface" class="toda_div">
                 <h1>Toque nas Áreas vermelhas para ter mais informações:</h1>
-                <div id="casa">
+                <div id="mapa_div">
                     <img src="img/specs/projeto_casa.png" usemap="#mapa">
                     <!--definindo um mapa de imagem-->
                     <map name="mapa" id="mapa_imagem">
@@ -65,6 +65,14 @@
 
                         <area alt="teste" title="escada" href="projeto_casa.html#escada" target="janela" coords="243,133 234,138 298,138 300,133" shape="poly">
                     </map>
+                </div>
+
+                <!--esse é o mapa de imagem para tablets e celulares-->
+                <div id="mapa_div_tablet">
+                    <!--trocando a imagem para uma menor-->
+                    <img src="img/specs/projeto_casa_tablet.png" usemap="#mapa">
+                    <!--definindo um mapa de imagem para tablet-->
+                    
                 </div>
                 
                 <div id="iframe">

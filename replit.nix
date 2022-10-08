@@ -1,5 +1,6 @@
 { pkgs }: {
   deps = [
+    pkgs.rclone
     pkgs.fzf
     pkgs.jq.bin
     pkgs.mpv
