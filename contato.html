@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Ville Pet</title>
+
+    <!--bootstrap links-->
+    <!--link css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--link css-->
+    <link href="css/estilo.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <!-- Aqui é o cabecalho onde fica menu-->
+    <header>
+        <div id="cabecalho" class="toda_div">
+            <picture id="logo">
+                <a href="index.html"><img src="img/cabecalho/logo.jpg" alt="logo Eco Ville Pet"></a>
+            </picture>
+            
+            <nav id="menu">
+                <ul>
+
+                    <li><a href="index.html" class="visitado">Início</a></li>
+                    <li><a href="specs.html">Especificação</a></li>
+                    <li><a href="contato.html" >Contato</a></li>
+                </ul>
+            </nav>
+
+            <nav id="drop_menu">
+                <button id="btn_drop_menu" onclick="ativa_menu()"><img src="img/cabecalho/menu.png" tabindex="0"></button>
+            </nav>
+
+            <div id="drop_link">
+                <button id="btn_fechar" onclick="fecha_menu()">X</button>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="categoria.html">Categoria</a></li>
+                    <li><a href="contato.html" >Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!--Aqui ficará o formulário de novidades e o maps-->
+    <main>
+        <div id="form_map" class="toda_div">
+            <div id="form" class="toda_div">
+                <form>
+                    <fieldset>
+                        <legend>Se inscreva para receber mais informações no seu email!</legend>
+                        <input type="text" name="cNome" id="txt_nome" size="20" maxlength="30"
+                            placeholder="Qual Seu Nome?">
+                        <input type="text" name="cNome" id="txt_nome" size="20" maxlength="30"
+                            placeholder="Seu e-mail?">
+                        <button onclick="alerta()">
+                            Cadastrar
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div id="map" class="toda_div">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.5918618745477!2d-48.56497348255617!3d-22.29344519999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c757fe1abe1399%3A0x3b0bd1dacc48457e!2sEtec%20Joaquim%20Ferreira%20do%20Amaral!5e0!3m2!1sen!2sbr!4v1662773348912!5m2!1sen!2sbr"
+                        width="100%" height="410px" allowfullscreen="false" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="rodape" class="toda_div">
+            <div class="rodape" id="institucional">
+                <h1>Institucional</h1>
+                <p><a>Quem Somos?</a></p>
+                <p><a>Onde Estamos?</a></p>
+            </div>
+
+            <div class="rodape" id="rede_social">
+                <h1>Redes Sociais</h1>
+
+                <div id="rede_img" class="logo">
+                    <picture>
+                        <a href="https://api.whatsapp.com/send?phone=555514988027050&text=Oi!!!%20Tudo%20bem%3F%20Gostaria%20de%20saber%20mais%20sobre%20os%20seus%20produtos."
+                            target="_blank"><img src="img/rodape/whatsapp.png" alt="Whatsapp"></a>
+                    </picture>
+
+                    <picture>
+                        <a href="https://www.facebook.com/people/Eco-Ville-Pet/100084975432074/" target="_blank"><img src="img/rodape/facebook.png" alt="Facebook"></a>
+                    </picture>
+
+                    <picture>
+                        <a href="https://www.instagram.com/eco_ville_pet/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img
+                                src="img/rodape/instagram.png" alt="instagram"></a>
+                    </picture>
+                </div>
+            </div>
+
+            <div class="rodape" id="seguranca">
+                <h1>Segurança</h1>
+                <picture>
+                    <img src="img/rodape/selo_seguranca.png" alt="Brasão de Cartões">
+                </picture>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
