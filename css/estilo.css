@@ -165,6 +165,13 @@ a{
     margin: 0 auto;
 }
 
+#interface p{
+    text-align: justify;
+    width: 70%;
+    margin: 0 auto;
+    padding: 3% 0;
+}
+
 /*Carrossel*/
 #carrossel{
     width: 100%;
