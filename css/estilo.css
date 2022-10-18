@@ -7,11 +7,6 @@
 padding:0; margin:0; vertical-align:baseline; border:0; font-size: 2vw;  font-family: Roboto;
 }
 
-
-a{
-    color: white;
-}
-
 .visitado{/*sublinha o link da página atual*/
     text-decoration: underline;
 }
@@ -22,6 +17,7 @@ a{
     margin: 1% auto 0 auto;
     border-radius: 20px;
     background-color: #E4E4D9;
+    box-shadow: 0px 0px 10px rgb(0 0 0.5);
 }
 
 /*Cabeçalho do site --menu*/
@@ -99,7 +95,6 @@ a{
     border-radius: 10px 10px;
 }
 
-
 #drop_link li{
     padding: 10px;
 }
@@ -131,6 +126,7 @@ a{
     #logo{width: 35%; height: 35%; margin-left: 12%; padding: 1%;}/*novo tamanho para logo*/
 
     /*interface*/
+    #interface h1{font-size: 10vw;}
     #produtos div{width: 70%;}
           
     /*rodape*/
@@ -141,6 +137,10 @@ a{
 
 /*Estilo para telas de tablet*/
 @media screen and (max-width: 860px){
+    .toda_div{
+        margin-bottom: 5%;/*aumentado o espaço entre as divs para tela de celular*/
+}
+          
     #menu{display: none;}/*O menu "normal" some*/
     #drop_menu{display: inline-block;}/*mostro o menu para telas pqns*/
     .toda_div{width: 95%;}/*defino um novo tamanho para as divs*/
@@ -175,19 +175,11 @@ a{
     margin: 0 auto;
 }
 
-#interface h2{
-    color: #0a6eb9;
-    font-family: "Fira Sans",Sans-serif;
-    
-    
-}
-
 #interface p{
-    font-family: "Fira Sans",Sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.9em;
-    letter-spacing: .1px;
+    text-align: justify;
+    width: 70%;
+    margin: 0 auto;
+    padding: 3% 0;
 }
 
 /*Carrossel*/
