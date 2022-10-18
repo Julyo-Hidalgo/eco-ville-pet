@@ -11,7 +11,7 @@ padding:0; margin:0; vertical-align:baseline; border:0; font-size: 2vw;  font-fa
     text-decoration: underline;
 }
 
-/*estilo para todas as divs que separam partes princiapis do site: cabeçalho, interface, aside e rodapé*/
+/*estilo para todas as divs que separam partes princiapis do site: cabeçalho, interface e rodapé*/
 .toda_div{
     width: 80%;
     margin: 1% auto 0 auto;
@@ -58,6 +58,10 @@ padding:0; margin:0; vertical-align:baseline; border:0; font-size: 2vw;  font-fa
     padding: 5px;
 }
 
+#menu a{
+    color: white;
+}
+
 #menu li a:hover{
     color: white;
     text-decoration: underline;
@@ -86,7 +90,7 @@ padding:0; margin:0; vertical-align:baseline; border:0; font-size: 2vw;  font-fa
     width: 100%;
     height: 100%;
     text-align: center;
-    position: absolute;
+    position: relative;
     background-color: black;
     opacity: 90%;
     border: 3px solid white;
@@ -114,12 +118,6 @@ padding:0; margin:0; vertical-align:baseline; border:0; font-size: 2vw;  font-fa
     position: relative;
 }
 
-
-
-
-
-
-
 /*Estilo para telas de celular*/
 @media screen and (max-width: 530px){
     #drop_menu{margin-left: 25%;}/*mudando a margin do drop menu*/
@@ -140,13 +138,17 @@ padding:0; margin:0; vertical-align:baseline; border:0; font-size: 2vw;  font-fa
     .toda_div{
         margin-bottom: 5%;/*aumentado o espaço entre as divs para tela de celular*/
 }
+
+    /*interface*/
+    #interface h1{font-size: 11vw;}
+    
+    #interface p{font-size: 4vw;}
           
     #menu{display: none;}/*O menu "normal" some*/
     #drop_menu{display: inline-block;}/*mostro o menu para telas pqns*/
     .toda_div{width: 95%;}/*defino um novo tamanho para as divs*/
     #logo img{width: 85%; height: 85%; padding: 3%;}/*novo tamanho para logo*/
 
-    /*interface*/
     .produto img{border-radius: 20px; padding: 10px;}/*arredondando e espaçando as imagens dos produtos*/
     
     /*rodape*/
@@ -176,7 +178,7 @@ padding:0; margin:0; vertical-align:baseline; border:0; font-size: 2vw;  font-fa
 }
 
 #interface p{
-    text-align: justify;
+    text-align: center;
     width: 70%;
     margin: 0 auto;
     padding: 3% 0;
@@ -289,6 +291,11 @@ padding:0; margin:0; vertical-align:baseline; border:0; font-size: 2vw;  font-fa
     font-size: 2vw;
 }
 
+.rodape img{
+    width: 100%;
+    height: 100%;
+}
+
 .logo{
     display: inline-block;
     margin: 0 auto;
@@ -302,7 +309,6 @@ padding:0; margin:0; vertical-align:baseline; border:0; font-size: 2vw;  font-fa
     border-radius:50%;
 }
 
-#atendimento img{
-    width: 100%;
-    height: 100%;
+#seguranca img{
+    width: 60%;
 }
