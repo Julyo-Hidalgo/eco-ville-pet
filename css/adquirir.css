@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+form{
+    background-color: #E4E4D9;
+    width: 60%;
+    margin: 2% auto;
+}
+
+fieldset{
+    text-align: center;
+    border: 10px solid black;
+    padding: 1%;
+}
