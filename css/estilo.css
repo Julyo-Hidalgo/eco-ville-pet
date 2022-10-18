@@ -4,11 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 *{
-padding:0; margin:0; vertical-align:baseline; list-style:none; border:0; font-size: 2vw; text-decoration:none; font-family: Roboto;
-}
-
-a{
-    color: white;
+padding:0; margin:0; vertical-align:baseline; border:0; font-size: 2vw;  font-family: Roboto;
 }
 
 .visitado{/*sublinha o link da página atual*/
@@ -30,6 +26,7 @@ a{
     margin-top: 0%;
 }
 
+
 #logo{
     position: relative;
     display: inline-block;
@@ -48,6 +45,12 @@ a{
 	position: relative;
     text-align: right;
     width: 70%;
+    
+}
+
+#menu ul{
+    list-style:none; 
+    text-decoration:none;
 }
 
 #menu li{
@@ -111,6 +114,12 @@ a{
     position: relative;
 }
 
+
+
+
+
+
+
 /*Estilo para telas de celular*/
 @media screen and (max-width: 530px){
     #drop_menu{margin-left: 25%;}/*mudando a margin do drop menu*/
@@ -152,6 +161,7 @@ a{
 #interface{
     padding-top: 1%;
     border-radius: 10px 10px 0 0;
+    
 }
 
 #interface h1{
@@ -286,6 +296,10 @@ a{
 
 .logo img{
     width: 30%;
+}
+
+.logo_eco_ville_pet{
+    border-radius:50%;
 }
 
 #atendimento img{
