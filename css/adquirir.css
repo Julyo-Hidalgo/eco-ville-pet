@@ -1,13 +1,41 @@
-@charset "UTF-8";
+@charset "utf-8";
 
 form{
-    background-color: #E4E4D9;
     width: 60%;
-    margin: 2% auto;
+    text-align: center;
+    margin: 1% auto;
 }
 
 fieldset{
+    background-color: #E4E4D9;
+}
+
+legend{
+    background-color: #89A730;
+    color: white;
+    font-size: 3vw;
+    border-radius: 10px;
     text-align: center;
-    border: 10px solid black;
-    padding: 1%;
+}
+
+text-area{
+    margin: auto;
+}
+
+span{
+    background-color:white;
+    text-align: center;
+    color: gray;
+    border: 5px solid white;
+}
+
+input{
+    text-align: center;
+}
+
+p{
+    display: block;
+    text-align: justify;
+    padding-left: 15%;
+    font-size: 2vw;
 }

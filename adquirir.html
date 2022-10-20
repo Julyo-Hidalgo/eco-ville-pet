@@ -1,18 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adquirir produto</title>
+    <title>Adquirir produto!</title>
+
+    <!--link js - minhas funções-->
+    <script src="js/funcoes.js"></script>
+
+    <!--bootstrap links-->
+    <!--link js-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <!--link css-->
-    <link href="css/estilo.css" rel="stylesheet" type="text/css">
-    
-    <!--bootstrap link css-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--link css-->
+    <link href="css/estilo.css" rel="stylesheet" type="text/css">
+    <link href="css/adquirir.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
+
+    <!-- Aqui é o cabecalho onde fica menu-->
     <header>
         <div id="cabecalho" class="toda_div">
             <picture id="logo">
@@ -21,9 +39,9 @@
             
             <nav id="menu">
                 <ul>
-                    <li><a href="index.html">Início</a></li>
+                    <li><a href="index.html" class="visitado">Início</a></li>
                     <li><a href="specs.html">Especificação</a></li>
-                    <li><a href="adquirir.html" class="visitado">Adquirir produto</a></li>
+                    <li><a href="adquirir.html">Adquirir produto</a></li>
                 </ul>
             </nav>
 
@@ -42,65 +60,47 @@
         </div>
     </header>
 
-    <div id="interface">
-        <form method="post" action="mailto:julyohidalgo0@gmail.com" oninput="Calc();"> 
-    
-            <fieldset id="usuario">
-                <legend> Identificação do Usuário </legend>
-               <p> Nome: <input type="text" name="cNome" id="tNome" size="20" maxlength="30" placeholder="Nome completo"> </p> 
-                <p> Senha: <input type="password" name="cSenha" id="tSenha" size="8" maxlength="8" placeholder="8 dígitos"> </p>
-                <p> E-mail: <input type="email" name="cMail" id="tSenha" size="20" maxlength="40"> </p> 
-                <fieldset id="sexo" >
-                <legend > Sexo: </legend>
-                    <p> <input type="radio" name="cSexo" id="tMasc"> <label for="tMasc"> Masculino </label> </p>
-                    <p> <input type="radio" name="cSexo" id="tFem"> <label for="tFem"> Feminino</label> </p>
-                </fieldset>
-                <p>  Data de Nascimento: <input type="date" name="cData" id="tData"> </p>
-            </fieldset>
- 
+    <form method="post" action="mailto:Julyo@contato.com.br" oninput="calcular_total();"> 
+        <fieldset id="usuario">
+            <legend> Identificação do Usuário </legend>
+            <p> Nome: <input type="text" name="cNome" id="tNome" size="20" maxlength="30" placeholder="Nome completo"> </p> 
+            <p> E-mail: <input type="email" name="cMail" id="tSenha" size="20" maxlength="40"> </p> 
+        </fieldset>
+        
             <fieldset id="endereco">
-                <legend> Endereço do Usuário </legend>
-                <p> Logradouro: <input type="text" name="cRua" id="tRua" size="13" maxlength="80" placeholder="Rua, Av, Trav."> </p>
-                <p> Número: <input type="number" name="cNum" id="tNum" min="0" max="99999"> </p>
-                
-                <p><label for="cEst"> Estado:</label>
-                <select name="tEst" id="cEst">
-                <optgroup label="Região Sudeste">
-                    <option value="RJ">São Paulo</option>
-                </optgroup>
-                </select></p>
-                <p><label for="cCid"> Cidade: </label>
-                <input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Sua Cidade" list="dCid">
-                <datalist id="dCid">
-                    <option value="Jaú"></option>
-                    <option value="Bauru"></option>
-                    <option value="Niterói"></option>
-                    <option value="Nova Iguaçu"></option>
-                    <option value="Belo Horizonte"></option>
-                </datalist>
-                </p> 
-            </fieldset>
-
-            <fieldset id="mensagem"> 
-                <legend> Mensagem do Usuário </legend>
-                <p><label for="cUrg"> Grau de Urgência: </label> Mín <input type=range name="tUrg" id="cUrg" min="0" max="10" step="2"> Máx <p>
-                <p><label for="cMsg"> Mensagem: </label>
-            <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
-                </p>
-            </fieldset>
+        <legend> Endereço do Usuário </legend>
+            <p> Logradouro: <input type="text" name="cRua" id="tRua" size="13" maxlength="80" placeholder="Rua, Av, Trav."> </p>
+            <p> Número: <input type="number" name="cNum" id="tNum" min="0" max="99999"> </p>
+            
+            <p><label for="cEst"> Estado: <span>São Paulo</span></label>
+            <p><label for="cCid"> Cidade: </label>
+            <input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Sua Cidade" list="dCid">
+            <datalist id="dCid">
+                <option value="Jaú"></option>
+                <option value="Bauru"></option>
+            </datalist>
+            </p> 
+        </fieldset>
     
-            <fieldset id="pedido">
-                <legend> Quero um Google Glass </legend>
-                <p><input type="checkbox" checked> <label for="cQuero"></label>Gostaria de adquirir um Google Glass quando disponível </p>
+            <fieldset id="mensagem"> 
+        <legend> Mensagem do Usuário </legend>
+            <p><label for="cUrg"> Grau de Urgência: </label> Mín <input type=range name="tUrg" id="cUrg" min="0" max="10" step="2"> Máx </p>
+            <p><label for="cMsg"> Mensagem: </label></p>
+        <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
+        </fieldset>
+    
+        <fieldset id="pedido">
+            <legend> Quero uma  casinha! </legend>
+                <p><input type="checkbox" checked> <label for="cQuero"></label>Gostaria de adquirir uma casinha quando disponível </p>
                 <p> <label="cCor"> Cor:</label> <input type="color" value="#0000FF"> </p> 
                 <P><label for="cQtd"></label> Quantidade: <input type="number" name="tQtd" id="cQtd" min="0" max="5"> </P>
                 <p><label for="cTot"></label> Preço Total: R$ <input type="text" placeholder="Total a pagar" readonly id="cTot"></p>
-            </fieldset>
-
-            <input type="image" src="_imagens/botao-enviar.png">
-        </form>
-    </div>
+        </fieldset>
     
+        <input type="image" src="img/form/botao-enviar.png">
+    </form>
+    
+    <!--Aqui ficará o rodapé-->
     <footer>
         <div id="rodape" class="toda_div">
             <div class="rodape" id="institucional">
@@ -122,7 +122,8 @@
                     </picture>
 
                     <picture>
-                        <a href="https://www.instagram.com/eco_ville_pet/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img src="img/rodape/instagram.png" alt="instagram"></a>
+                        <a href="https://www.instagram.com/eco_ville_pet/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img
+                                src="img/rodape/instagram.png" alt="instagram"></a>
                     </picture>
                 </div>
             </div>

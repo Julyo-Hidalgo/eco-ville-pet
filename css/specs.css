@@ -15,38 +15,33 @@
     display: inline-grid;
 }
 
-/*escondendo o mapa de imagem para tablet*/
-#mapa_div_tablet img{
-    display: none;
+#mapa_div img{
+    width: 100%;
 }
 
+/*estilo celular*/
 @media screen and (max-width: 530px){
-    /*trocando o mapa para um menor*/
-    #mapa_div img{
-        display: none;
-    }
-
-    #mapa_div_tablet img{
-        display: block;
-        width: 100%;
-        height: 100%;
-        padding: 10px;
-    }
-
     /*mudando a margin da interface*/
     #interface div{
         margin: 0;
     }
+
+    #iframe{
+        width: 100%;
+    }
 }
 
-#iframe{
+.iframe{
     width: 50%;
-    height: 240px;
+    height: 100%;
 }
 
 iframe{
     border: none;
     overflow: hidden;
+    width: 80%;
+    height: 250px;
+    margin: 0 auto;
 }
 
 #interface h1{
