@@ -18,32 +18,6 @@
 #mapa_div img{
     width: 100%;
 }
-
-/*estilo celular*/
-@media screen and (max-width: 530px){
-    /*mudando a margin da interface*/
-    #interface div{
-        margin: 0;
-    }
-
-    #iframe{
-        width: 100%;
-    }
-}
-
-.iframe{
-    width: 50%;
-    height: 100%;
-}
-
-iframe{
-    border: none;
-    overflow: hidden;
-    width: 80%;
-    height: 250px;
-    margin: 0 auto;
-}
-
 #interface h1{
     width: 70%;
 }

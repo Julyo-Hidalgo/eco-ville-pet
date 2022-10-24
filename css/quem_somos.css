@@ -45,3 +45,15 @@ iframe{
         height: 250px;
     }
 }
+
+#exemplo{
+    padding: 3%;
+    display: block;
+    margin: auto;
+    width: 40%;
+    background-color: #89A730;
+}
+
+#exemplo img{
+    width: 100%;
+}

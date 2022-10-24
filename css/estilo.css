@@ -53,6 +53,11 @@ padding:0; margin:0; vertical-align:baseline; border:0; font-size: 2vw;  font-fa
     display: inline-block;
 }
 
+#menu li::after{
+    content: ' |';
+    color: white;
+}
+
 #menu a{
     color: white;
 }
