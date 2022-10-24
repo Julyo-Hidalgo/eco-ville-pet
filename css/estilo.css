@@ -51,7 +51,6 @@ padding:0; margin:0; vertical-align:baseline; border:0; font-size: 2vw;  font-fa
 
 #menu li{
     display: inline-block;
-    padding: 5px;
 }
 
 #menu a{
@@ -97,6 +96,7 @@ padding:0; margin:0; vertical-align:baseline; border:0; font-size: 2vw;  font-fa
 
 #drop_link li{
     padding: 10px;
+    list-style: none;
 }
 
 #drop_link a{
@@ -121,7 +121,6 @@ padding:0; margin:0; vertical-align:baseline; border:0; font-size: 2vw;  font-fa
 
     /*interface*/
     #interface h1{font-size: 10vw;}
-    #produtos div{width: 70%;}
           
     /*rodape*/
     #rodape div{display: block; width: 65%; margin: 0 auto;}/*novo tamanho para as divs do rodapé*/
