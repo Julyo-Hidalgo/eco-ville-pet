@@ -9,7 +9,8 @@ function fecha_menu() {
 }
 
 function calcular_total(){
-    var qnt = 
+    var Qtd = parseInt(document.getElementById("cQtd").value);
+    total = Qtd * 308.87;
+    document.getElementById('cTot').value=total;
 
-    document.getElementById("cTotal");
 }

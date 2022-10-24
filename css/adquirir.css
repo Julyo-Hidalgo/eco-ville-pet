@@ -1,13 +1,9 @@
 @charset "utf-8";
 
 form{
-    width: 60%;
+    width: 100%;
     text-align: center;
     margin: 1% auto;
-}
-
-fieldset{
-    background-color: #E4E4D9;
 }
 
 legend{
@@ -18,8 +14,10 @@ legend{
     text-align: center;
 }
 
-text-area{
+textarea{
     margin: auto;
+    position: relative;
+    width: 80%;
 }
 
 span{
@@ -33,10 +31,24 @@ input{
     text-align: center;
     display: block;
     margin: 0 auto 5% auto;
+    border-radius: 10px;
 }
 
 p{
     display: block;
     text-align: center;
     font-size: 2vw;
+}
+
+fieldset{
+    position: relative;
+    display: inline-grid;
+    width: 35%;
+    background-color: #E4E4D9;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+#button{
+    width: 30%;
 }
