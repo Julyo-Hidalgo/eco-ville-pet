@@ -22,8 +22,7 @@ padding:0; margin:0; vertical-align:baseline; border:0; font-size: 2vw;  font-fa
 
 /*Cabeçalho do site --menu*/
 #cabecalho{
-    background-color: #89A730;  
-    margin-top: 0%;
+    background-color: #89A730
 }
 
 
@@ -36,8 +35,6 @@ padding:0; margin:0; vertical-align:baseline; border:0; font-size: 2vw;  font-fa
 #logo img{
     padding: 5%;
     border-radius:50%;
-    width: 80%;
-    height: 80%;
 }
 
 #menu{
@@ -45,7 +42,6 @@ padding:0; margin:0; vertical-align:baseline; border:0; font-size: 2vw;  font-fa
 	position: relative;
     text-align: right;
     width: 70%;
-    
 }
 
 #menu ul{
@@ -172,6 +168,7 @@ padding:0; margin:0; vertical-align:baseline; border:0; font-size: 2vw;  font-fa
     color: white;
     font-size: 3vw;
     margin: 0 auto;
+    box-shadow: 0px 0px 10px rgb(0 0 0.5);
 }
 
 #interface h2{
@@ -271,4 +268,61 @@ padding:0; margin:0; vertical-align:baseline; border:0; font-size: 2vw;  font-fa
     width: 100%;
     height: 150%;
     padding: 2%;
+}
+
+/*estilo do rodapé*/
+#rodape{
+    padding: 2%;
+    text-align: center;
+}
+
+.rodape a{
+    color: #262320;
+    font-size: 1.5vw;
+}
+
+#rodape a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.rodape{/*estilo para as divs do rodapé*/
+    position: relative;
+    display: inline-grid;
+    width: 30%;
+    text-align: center;
+}
+
+.rodape h1{
+    color: #262320;
+    font-size: 2vw;
+}
+
+.rodape p{
+    font-family: Roboto;
+    font-size: 1.5vw;
+}
+
+.rodape img{
+    width: 100%;
+    height: 100%;
+}
+
+.logo{
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.logo img{
+    width: 30%;
+}
+
+.logo_eco_ville_pet{
+    border-radius:50%;
+    width: 300px;
+    height: 300px;
+}
+
+#seguranca img{
+    width: 60%;
 }
