@@ -9,8 +9,23 @@ function fecha_menu() {
 }
 
 function calcular_total(){
-    var Qtd = parseInt(document.getElementById("cQtd").value);
-    total = Qtd * 308.87;
-    document.getElementById('cTot').value=total;
+    preco_pqn = 308.87;
+    preco_md = 525.91;
+    preco_gd = 912.26;
 
+    var tamanho = document.getElementById("campo_tamanho").value;
+
+    if (tamanho == "p"){
+        var qnt = parseInt(document.getElementById("campo_quantidade").value);
+        total = qnt * preco_pqn;
+    }else{
+        if (tamanho == "m"){
+            total = qnt * preco_md;
+        }else{
+            total = qnt * preco_gd;
+        }
+    }
+    
+    total = total.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+    document.getElementById('campo_total').value=total;
 }

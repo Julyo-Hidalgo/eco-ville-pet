@@ -1,54 +1,81 @@
-@charset "utf-8";
-
 form{
-    width: 100%;
     text-align: center;
-    margin: 1% auto;
-}
-
-legend{
-    background-color: #89A730;
-    color: white;
-    font-size: 3vw;
-    border-radius: 10px;
-    text-align: center;
-}
-
-textarea{
-    margin: auto;
-    position: relative;
-    width: 80%;
-}
-
-span{
-    background-color:white;
-    text-align: center;
-    color: gray;
-    border: 5px solid white;
-}
-
-input{
-    text-align: center;
-    display: block;
-    margin: 0 auto 5% auto;
-    border-radius: 10px;
-}
-
-p{
-    display: block;
-    text-align: center;
-    font-size: 2vw;
 }
 
 fieldset{
-    position: relative;
-    display: inline-grid;
-    width: 35%;
-    background-color: #E4E4D9;
-    border-radius: 10px;
-    margin-bottom: 5%;
+    border: 1px solid black;
+    width: 40%;
+    display: inline-block;
+    margin: 2% auto;
+    text-align: center;
 }
 
-#button{
-    width: 30%;
+legend{
+    color:white;
+    background-color: #89A730;
+    border-radius: 10px;
+    font-size: 3vw;
+}
+
+label{
+    font-size: 2vw;
+    padding: 3%;
+    text-align: center;
+    width: 200px;
+}
+
+input{
+    font-size: 2vw;
+    text-align: center;
+}
+
+ .input{
+    width: 135px;
+    text-align: center;
+ }
+
+ #usuario input{
+    width: 350px;
+ }
+
+ #usuario{
+    padding: 3% 0 2% 0;
+ }
+
+#btn_enviar{
+    width: 20%;
+    color: white;
+    font-size: 3vw;
+    border-radius: 10px;
+    background-color: #89A730;
+}
+
+ /*tablet*/
+@media screen and (max-width: 860px){
+    fieldset{
+        width: 80%;
+    }
+
+    .input, label{
+        font-size: 2vw;
+    }
+
+    legend{
+        width: 50%;
+    }
+}
+
+/*celular*/
+@media screen and (max-width: 530px){
+    fieldset{
+        width: 100%;
+    }
+
+    legend{
+        font-size: 4vw;
+    }
+
+    .input, label{
+        font-size: 5vw;
+    }
 }
