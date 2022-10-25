@@ -18,3 +18,14 @@ iframe{
     width: 350px;
     height: 190px;
 }
+
+@media screen and (max-width: 530px){
+    iframe{
+        width: 255px;
+        height: 220px;
+    }
+
+    #div_mapa img{
+        width: 80%;
+    }
+}

@@ -78,4 +78,8 @@ input{
     .input, label{
         font-size: 5vw;
     }
+
+    #btn_enviar{
+        width: 40%;
+    }
 }
