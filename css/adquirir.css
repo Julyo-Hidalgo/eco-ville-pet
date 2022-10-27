@@ -30,12 +30,12 @@ input{
 }
 
  .input{
-    width: 135px;
+    width: 200px;
     text-align: center;
  }
 
  #usuario input{
-    width: 350px;
+    width: 250px;
  }
 
  #usuario{
@@ -68,7 +68,7 @@ input{
 /*celular*/
 @media screen and (max-width: 530px){
     fieldset{
-        width: 100%;
+        width: 90%;
     }
 
     legend{
